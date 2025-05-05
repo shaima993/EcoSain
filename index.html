@@ -5,64 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="icon" href="https://png.pngtree.com/png-clipart/20190630/original/pngtree-vector-portfolio-icon-png-image_4171290.jpg" type="image/x-icon">
-
+<link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
     <header> 
-    <nav>
-        <ul style="display: flex; list-style:none" >
+    <nav >
+        <ul>
+          <div class="nav">
           <li><a href="#Home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#work">Work</a></li>
           <li><a href="#resume">Resume</a></li>
           <li><a href="#contact">Contact</a></li>
+        </div>
         </ul>
       </nav>
     </header>
    
-    <section id="home" style="text-align: center; background-color: rgb(245, 245, 129);">  <!-- Section Home -->
+    <section id="Home" style="text-align: center; ">  <!-- Section Home -->
     <h1> <i>Bienvenue sur mon portfolio</i></h1>
   </section>
    
-   <section id="about" style="background-color:rgb(245, 245, 129);"> <!-- Section About -->
-     <h2><i>À propos de moi</i></h2>
+   <section id="about" > <!-- Section About -->
+     <h2 id="apropos"><i>À propos de moi</i></h2>
       <ul type="none"> 
-        
+        <div class="liste">
         <li>MELLITI Chayma</li>
         <li>Adresse : 13 Rue d'olive Mourouj 1, Ben Arous </li>
         <li>Age : 31 ans</li>
+      </div>
+      <div class="para">
         <p>Je suis diplômé en génie des procédés chimiques. J'ai suivi des cours de gestion de laboratoire et de gestion de la qualité et de l'environnement. 
             J'ai travaillé dans une entreprise de transformation des matières plastiques en tant que responsable QA/QC et dans une entreprise de 
             commercialisation des matières plastiques au sein du département des achats et de la logistique. J'ai également travaillé comme rédacteur de
              rapports à distance pour des audits de responsabilité de seconde partie dans une entreprise privée.  Je développe actuellement un projet personnel, 
              c'est pourquoi je suis ce cours de développement web afin de pouvoir créer mon propre site web. <p> 
-
+            </div>
      </ul>
    
   </section>
 
-  <section id="work" style="background-color:rgb(245, 245, 129);">   <!-- Section Work -->
+  <section id="work">   <!-- Section Work -->
 
-    <h2><i>Mes projets</i></h2>
+    <h2 id="projets"><i>Mes projets</i></h2>
      <ul>
+      <div class="liste2">
       <li> Création des bijoux </li>
       <li> Fabrication des détergents naturels</li>
       <li> Edition des vidéos (comme ci-dessous) </li>
+    </div>
      </ul>
-     
+     <div class="vid">
      <video controls width="200"> <!-- Exemple d'un vidéo -->
         <source src="Nature.mp4" type="video/mp4">
         Votre navigateur ne prend pas en charge la vidéo.
       </video>
-    
+    </div>
      </section>
 
       
-  <section id="resume" style="background-color:rgb(245, 245, 129);">  <!-- Section Resume: Expériences et Formations -->
+  <section id="resume">  <!-- Section Resume: Expériences et Formations -->
+  
     <h2><i>Mon parcours</i></h2>
-
-    
-    <table border="1">  <!-- Premier tableau: Expériences -->
+  
+    <div class="table">
+    <table class="tab">  <!-- Premier tableau: Expériences -->
       <tr>
         <th>Année</th>
         <th> Expérience</th>
@@ -86,7 +93,7 @@
     </table>
 
     <br>
-    <table border="1" > <!-- Deuxieme tableau : Formations -->
+    <table class="tab"> <!-- Deuxieme tableau : Formations -->
         <tr>
           <th>Année</th>
           <th> Formations</th>
@@ -104,21 +111,22 @@
             <td>Formation en développement Web</td>
           </tr>
         </table>
+      </div>
     </section>
 
  
- <section id="contact" style="background-color:rgb(245, 245, 129);"> <!-- Section Contact -->
+ <section id="contact"> <!-- Section Contact -->
     <h2><i>Contactez-moi</i></h2>
     <form  method="post">
-      <label>Nom:</label> 
+      <label id="nom">Nom:</label> 
       <input type="text" name="first name" placeholder="Tapez votre nom ici" />
       <br>
       <br>
-      <label>Email : </label>
+      <label id="Email">Email : </label>
       <input type="email" name="email" placeholder="Tapez votre Email ici" >
       <br>
       <br>
-      <label> Message :</label> 
+      <label id="Message"> Message :</label> 
       <br>
       <textarea name="message" rows="5" cols="50"></textarea>
       <br>
@@ -127,7 +135,7 @@
     </form>
 </section>
 
-<footer style="background-color:rgb(245, 245, 129);"><!-- Footer -->
+<footer><!-- Footer -->
   <p><b> MELLITI Chayma</b></p>
 
   <p>
