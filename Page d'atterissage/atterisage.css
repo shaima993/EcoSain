@@ -1,0 +1,130 @@
+
+/*section entete*/
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(106, 61, 94);
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    gap: 25px;
+}
+.nav h1{
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: lighter;
+    font-family: fantasy;
+    font-size: 35px;
+    
+}
+
+.nav img{
+    width: 90px;
+    height: 90px;
+}
+.logo{
+    display: flex;
+  
+    
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    padding-right: 20px;
+     
+
+}
+.nav-links a {
+    display: flex;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+font-size: 20px;
+color: antiquewhite;
+text-transform: uppercase;
+ transition: color 0.3s;
+}
+ 
+.nav-links a:hover {
+  color: rosybrown;
+}
+/*fin section entete*/
+
+/* Section Produits */
+h2{
+font-size: 32px;
+  color: #222;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  padding: 20px;
+}
+
+.produits {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 30px;
+  margin-top: 10px;
+   background-color: rgb(106, 61, 94);
+  padding: 20px;
+  border-radius: 10px;
+   transition: transform 0.3s;
+}
+
+.produits :hover{ 
+    transform: scale(1.05);
+}
+
+.produits-item img {
+    width: 50%;
+    height: auto;
+    justify-content: center;
+}
+.produits-item{
+ background-color:pink;
+  padding: 1rem;
+  border: 1px ;
+  border-color: blueviolet;
+  border-style: dashed;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+   transition: transform 0.3s;
+}
+
+
+.produits button {
+
+  background-color: rgb(148, 84, 84);
+  color: #fff;
+  border: none;
+  padding: 0.5rem ;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  
+
+}
+
+.produits button:hover {
+  background-color: rgb(93, 71, 36);
+}
+/* fin Section Produits */
+
+/*section footer*/
+/* Pied de page */
+footer {
+  background-color: rgb(106, 61, 94);
+  color:whitesmoke;
+  text-align: center;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 10px;
+}
+/* Pied de page */
