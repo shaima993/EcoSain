@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Sain - Produits</title>
+    <link rel="icon" href="projet/logo en tete.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> <!-- link font family : lobster-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> <!-- link bootstrap icones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- link font awesome pour le panier ds le bouton-->
+    <link rel="stylesheet" href="styles.css">
+    <script src="/eco.js"></script>
+</head>
+
+<body>
+
+    <header class="entete">
+       <!-- la partie en haut : bare de navigation --> 
+       <img id="logo" src="projet/logo.png" height="100" alt="logo du site"> <!-- logo--> 
+ 
+          <nav id="mainNav">
+            <ul>
+              <div class="nav">
+                <li><a href="index.html">Acceuil</a></li>
+                <li><a href="apropos.html">A propos</a></li>
+                <li><a href="nos packs.html">Nos Packs</a></li>
+              <li><a href="contactez-nous.html">Contactez-nous</a></li>
+              </div>
+            </ul>
+        </nav>
+          <!-- Partie droite : formulaire avec icônes -->
+       <div class="formulaire" >
+ <!-- Icône Recherche juste décorative ou bouton -->
+<a href="#" id="search-btn"><img src="projet/loupe1.png" height="30" width="30" alt="Recherche">
+</a>
+
+<!-- Overlay flou -->
+<div id="overlay"></div>
+
+<!-- Mini page centrée -->
+<div id="search-page">
+    <!-- Sélection des produits qui redirige à la sélection -->
+  <select id="produits" name="produits" >
+   <option value="">-- Sélectionnez un produit --</option>
+    <option value="multiusage.html">Multi-usage</option>
+    <option value="détartrant wc.html">Détartrant WC et salle de bain</option>
+    <option value="sol.html">Sol</option>
+    <option value="lessive vaisselle à la main.html">Lessive vaisselle à la main</option>
+    <option value="vitres & inox.html">Vitres et Inox</option>
+    <option value="meubles en bois.html">Meubles en bois</option>
+    <option value="désodorisant d'air.html">Désodorisant d'air</option>
+    <option value="détachant.html">Détachant pour vêtements</option>
+    <option value="désodorisant tapis.html">Désodorisant tapis/canapés/moquettes</option>
+    <option value="poudre linge machine.html">Poudre linge machine</option>
+    <option value="poudre linge blanc.html">Poudre linge blanc machine</option>
+    <option value="poudre vaisselle.html">Poudre vaisselle machine</option>
+     <option value="pack vaisselle.html">Pack vaisselle</option>
+    <option value="pack linge.html">Pack linge</option>
+    <option value="pack salon.html">Pack salon</option>
+    <option value="pack power.html">Pack power</option>
+    <option value="pack complet.html">Pack complet</option>
+  </select>
+
+</div>
+
+          <a href="profil.html">
+          <img  src="projet/profil2.png" height="30" width="30" alt="Profil">
+          </a>
+          <a href="panier.html">
+          <img  src="projet/panier1 (4).png" height="30" width="30" alt="Panier">
+          </a> 
+      </div>
+   <!-- Bouton burger pour petit écran -->
+  <button class="burger" id="burgerBtn" aria-label="Menu">
+    ☰
+  </button>
+    </header>
+    <div>
+<nav class="breadcrumb">
+  <a href="index.html#accueil">ACCUEIL</a>  <span class="sep">&gt;</span>
+ 
+  <a href="nosproduits.html">NOS PRODUITS</a>  <span class="sep">&gt;</span>
+
+  <span>DÉTACHANT POUR VÊTEMENTS</span>
+</nav>
+    </div>
+
+
+       
+<div class="produit-container" data-id="ES01">
+<div class="img-produit">
+<img  src="/projet/Détachant.jpg" alt="Détachant pour vêtements">
+</div>
+<div class="description">
+<h4> DÉTACHANT POUR VÊTEMENTS  200ml </h4>
+<h5> Indications</h5>
+<p>Spécialement conçu pour éliminer les taches de stylo et d'encre, ainsi que les taches de sang, de sueur et de nourriture, avant le lavage. Agiter avant utilisation, puis vaporiser le produit directement sur la tache, laisser agir quelques minutes, frotter puis laver comme d'habitude.</p>
+<p>Conserver dans un endroit frais et sec, à l'abri de la lumière et hors de portée des enfants.</p>
+<h5>Ingrédients</h5>
+<p> savon noir, crisatux de soude, bicarbonate de soude </p>
+<h5>Prix : 9dt</h5>
+<div class="product-actions">
+  <button class="btn-minus">-</button>
+  <span class="quantity">1</span>
+  <button class="btn-plus">+</button>
+<button class="btn-order"> <i class="fas fa-basket-shopping"></i> Ajouter au panier </button>
+</div>
+
+</div>
+</div>
+
+   
+
+
+ <!-- contact us + footer -->   
+      <section id="contactez-nous" class="footer" >
+        <div class="contact">
+<img src="/projet/footer.png" alt="logo">
+<p><i class="bi bi-envelope"></i> : ecosain@detergents.com</p>
+<p> <i class="bi bi-telephone"></i> : +216 26 280 923</p>
+ </div>
+
+ <div class="informations">
+  <li><a href="index.html">Acceuil</a></li>
+   <li><a href="apropos.html">A propos</a></li>
+   <li><a href="contactez-nous.html">Contactez-nous</a></li>
+
+</div>
+
+ <div class="suivre">
+ <div  class="social-icons">
+           <a href="https://www.instagram.com/ecosain.detergents?igsh=eDVnc21vN21kbDU="target="_blank" class="social-icon"><i class="bi bi-instagram"></i></a>
+           <a href="https://www.facebook.com/share/1DVS9AtX3u/"target="_blank" class="social-icon"><i class="bi bi-facebook"></i></a>  
+        </div>
+ </div>
+      </section>
+        
+</body>
+</html>
